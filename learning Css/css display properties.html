@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{ 
+            /* normaly the div is a box element but be can convert it into a inline element by usig a property dispaly */
+            display: inline;  /* This will convert the div into a inline element */
+            color: blue;
+            margin: 25px;
+            display: inline-block; /* As the inline elements doesnot respect the top level margin and padding hence we use the inline-block property*/
+            
+            padding: 20px;
+            border: 2px,solid;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"> I am a box
+
+    </div>
+</body>
+</html>
