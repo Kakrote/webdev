@@ -1,0 +1,23 @@
+.border{
+    border: 2px solid rgb(207, 196, 196); 
+    margin: 3px;
+    border-radius: 20px;
+}
+.color-invert{
+    filter: invert();
+}
+.button-radius{
+    border-radius: 12px;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+}
+.justify-centre{
+    justify-content: center;
+}
+.iteam-centre{
+    align-items: center;
+}

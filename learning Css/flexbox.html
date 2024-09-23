@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+</head>
+<style>
+    .container{
+        border: 2px solid black;
+        /* to make them left to right */
+        /* by defult the flex agrange the iteam from left t right */
+        display: flex;
+        height: 70vh;
+        /* to bring them in the centre  */
+        /* justify-content is use to align the items horizontaly  */
+        justify-content: center;
+        /* align-items is for vertical alignment */
+        align-items: center;
+        /* we use flex direction to change the orintation of the iteams in the flex from defult */
+        /* flex-direction: column; */
+        /* now suppose we have many eliments and they are geting out of the container or getting overflow in such case we use wrap */
+        /* the flex wrap will wrap the conatiner iteams with in the container */
+        flex-wrap: wrap;
+        /* when we have the multiple lines we can use align content instend of align iteam */
+        /* this will align multiple lines in the centre */
+        align-content: center;
+        /*  there is flex flow property of flex box which is use to set the flex direction and flex wrap together  */
+        flex-flow: row wrap ;
+        
+
+    }
+    .iteam{
+        width: 40px;
+        height: 50px;
+        margin: 5px;
+        background-color: aqua;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+    </div>
+</body>
+</html>

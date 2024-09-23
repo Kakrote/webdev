@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 35vw;
+            height: 35px;
+            border: 2px solid black;
+            padding: 3px;
+            margin: 3px;
+        }
+        /* by defult the position is static and to make changes ints position we have to change its position from static to anyother */
+        .box1{
+            /* position: relative; */
+            background-color: aliceblue;
+            /* z-index: 1; \
+             */
+             position: absolute;
+             bottom: 50px; /* it will ignore the parent as the parent have no postion element */
+            /* the z-index wont let the box2 to overlap box 1 but it will form the box1 in top of box2 */
+            
+        }
+        .box2{
+            position: relative;
+            bottom: 30px;
+            left: 10px;
+            background-color: aquamarine;
+        }
+        .box3{
+            background-color: bisque;
+        }
+        .box4{
+            background-color: lightblue;
+        }
+        .perent{
+            height: 50vh;
+            width: 50vw;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="perent">
+
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>

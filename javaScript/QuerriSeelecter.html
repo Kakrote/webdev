@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+<body>
+    <div class="conatiner">
+
+        <div class="box">Bhupendra Jogi 1</div>
+        <div class="box">Bhupendra Jogi 2</div>
+        <div  class="box">Bhupendra Jogi 2.5</div>
+        <div id="greenbox" class="box">Bhupendra Jogi 3</div>
+        <div class="box">Bhupendra Jogi 4</div>
+
+    </div>
+    <script>
+        let bj=document.getElementsByClassName("box")
+        console.log(bj)
+        bj[2].style.backgroundColor="red"
+        // now let say we want to change the color of the bhupendra jogi 3 
+        // this method will fail so in this we use getElementById
+        const changecolor = ()=>{
+            let bj=document.getElementById("greenbox")
+            bj.style.backgroundColor="green"
+        };
+        changecolor()
+        document.querySelector(".box").style.backgroundColor="yellow" // this will only apply to first child
+        document.querySelectorAll(".box").forEach(e=>{
+            e.style.backgroundColor="yellow" 
+        }) // this will alow to us to apply this style to all the class with the name .boxc
+        const al=document.querySelector(".box").outerHTML
+        console.log(al)
+
+    </script>
+</body>
+</html>

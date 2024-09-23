@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+</head>
+<style>
+    body{
+        background-color: beige;
+    }
+    .card{
+        background-color: white;
+        width: 45vw;
+        border-radius: 20px;
+        border: 1px solid black;
+        height: 60vh;
+        padding: 10px;
+        
+        
+    }
+    ::selection{
+        background-color: grey;
+        color: yellow;
+    }
+    .img{
+        /* border: 1px solid black; */
+        padding-left: 1px;
+    }
+    .img img{
+        border-radius: 20px;
+        width: 300px;
+        height: 210px;
+        padding: 5px;
+        object-fit: fill;
+    }
+    .content{
+        padding: 5px 8px;
+        /* border-radius: 20px;
+        border: 1px solid black; */
+    }
+    .content p{
+        color: rgb(8, 68, 105);
+        padding-left: 10px;
+
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+    .button button{
+        border-radius: 20px;
+        color: rgb(19, 107, 166);
+        background-color: lightblue;
+    }
+</style>
+<body>
+    <div class="card">
+        <div class="img">
+            <img src="https://droidjournal.com/wp-content/uploads/2020/08/Deadpool_Textless.jpg" alt="" >
+        </div>
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro soluta perspiciatis doloremque beatae sint animi ut! Aperiam voluptatibus accusamus deserunt ipsa culpa, aspernatur hic tenetur laboriosam, fuga, rerum non provident.
+            </p>
+        </div>
+        <div class="button">
+            <button>Book</button>
+        </div>
+    </div>
+</body>
+</html>

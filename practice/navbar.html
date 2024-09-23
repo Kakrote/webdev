@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: black;
+        
+    }
+    header{
+        background-color: blue;
+        position: fixed;
+        padding: 10px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .nav a{
+        left:30px;
+        position: relative;
+        font-size: 1.1em;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px;
+        /* margin-left: 40px; */
+        margin-right: 40px;
+    }
+    .nav a::after{
+        content: '';
+        position: absolute;
+        /* position: relative; */
+        left: 0;
+        bottom: 4px;
+        width: 100%;
+        height: 3px;
+        background-color: #dfbfbf;
+        border-radius: 5px;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .5s;
+    }
+    .nav a:hover::after{
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    .card{
+        width: 200px;
+        height: 400px;
+        background-color: white;
+        margin-top: 54px;
+        margin-left: 990px;
+        border-radius: 20px;
+    }
+    .image img{
+        width: 180px;
+        height: 150px;
+        margin: 8px;
+        border-radius: 20px;
+    }
+    .image img:hover{
+        animation: zoomin 5s 1;
+    }
+    @keyframes zoomin {
+        from{
+        }
+        to{
+            transform: scale(2);
+            transition-property: transform;
+            transition-duration: .2s;
+            transition-timing-function: ease-in-out;
+        }
+        
+    }
+    .container{
+        padding: 10px 10px;
+        overflow: hidden;
+    }
+    .container p{
+        padding: 3px 9px 3px 10px;
+        font-size: 14px;
+        font-weight: 60px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .button button{
+        background-color: rgb(64, 86, 188);
+        color: rgb(34, 34, 126);
+        text-align: center;
+        border-radius: 13px;
+    }
+   
+</style>
+<body>
+    <header>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Skills</a>
+        </div>
+    </header>
+    <div class="card">
+        <div class="image">
+            <img src="https://th.bing.com/th/id/OIP.EBWxP1LL0Oj__wsjweGvXAHaE8?rs=1&pid=ImgDetMain" alt=" ">
+        </div>
+        <div class="container">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quas, ex assumenda, pariatur illo minima animi a id, voluptatem rem eius dolorem! Ad laborum voluptatum itaque minus eaque quam tempore?</p>
+        </div>
+        <div class="button">
+            <button>Read more</button>
+        </div>
+
+    </div>
+  
+    </body>
+</html>

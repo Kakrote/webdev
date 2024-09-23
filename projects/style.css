@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assests/img/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: auto;
+
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    opacity: 0.70;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    height: 63px;
+    max-width: 58vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    color: red;
+    width: 120px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.text {
+    height: 88.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+    font-family: "Martel", serif;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.text> :first-child {
+    font-size: 47px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.text> :nth-child(2) {
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.text> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sapration {
+    height: 8px;
+    position: relative;
+    z-index: 100;
+    background-color: rgb(105, 100, 100);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(217, 203, 203, 0);
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red {
+    padding: 3px 17px;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: red;
+    color: white;
+
+}
+
+
+.btn-red-sn {
+    padding: 6px;
+    background-color: red;
+    color: white;
+}
+
+.text-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.email-input{
+    border-radius: 20px !important;
+}
+
+.main input {
+    background: transparent;
+    padding: 7px 15px 8px 14px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(163, 155, 155, 0.4);
+    color: white;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    min-height: 40vh;
+    margin: auto;
+    color: white;
+    /* flex-wrap: wrap; */
+}
+
+.text2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 14px 0px 0px 0px;
+}
+
+.text2 :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+    font-family: "Martel", serif;
+}
+
+.text2 :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Martel", serif;
+
+}
+
+.text2 :nth-child(3) {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Martel", serif;
+}
+
+.secimag {
+    /* top: 10px; */
+    position: relative;
+}
+
+.secimag img {
+    width: 453px;
+    position: relative;
+    z-index: 10;
+}
+
+.secimag video {
+    width: 325px;
+    position: absolute;
+    top: 69px;
+    right: 64px;
+}
+
+.secound .secimag .rect {
+    width: 260px;
+    height: 100px;
+    border: 1px solid;
+    bottom: 102px;
+    z-index: 100;
+    left: 97px;
+    position: relative;
+    border-radius: 8px;
+    background-color: black;
+}
+
+.rect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rect img {
+    width: 50px;
+    padding: 10px 4px;
+}
+
+.rect .tt :nth-child(1) {
+    font-family: "Martel", serif;
+    ;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.rect .tt :nth-child(2) {
+    font-family: "Martel", serif;
+    ;
+    font-size: 14px;
+    font-weight: 400;
+    color: blue;
+}
+
+.third .secimag video {
+    width: 280px;
+    right: 85px;
+    margin: -2px
+}
+
+.faq {
+    padding: 34px;
+    color: white;
+    background-color: black;
+}
+
+.faq h2 {
+    padding: 5px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.faqbox {
+    transition: all 0.6s ease-out;
+    border-radius: 8px;
+    max-width: 66vw;
+    margin: 13px auto;
+    display: flex;
+    background-color: rgba(74, 72, 72, 0.66);
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.faqbox:hover {
+    background-color: rgba(101, 97, 97, 0.915);
+    cursor: pointer;
+
+}
+
+.faqbox :first-child {
+    font-family: "Martel", serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 34px;
+}
+
+footer .qa {
+    padding: 35px 0;
+}
+
+.footer a {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Martel", serif;
+    color: gray;
+}
+
+footer .footer-iteam {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+
+@media screen and (max-width:800px) {
+    .footer {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .btn-red{
+        padding: 3px 3px;
+        font-size: 20px;
+    }
+    .text> :first-child {
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+    }
+    
+    .text> :nth-child(2) {
+        font-size: 28px;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .text> :nth-child(3) {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .text2> :first-child {
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+    }
+    
+    .text2> :nth-child(2) {
+        font-size: 28px;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .text2> :nth-child(3) {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+    nav{
+        gap:30px
+    }
+    nav div{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+    }
+}
+
+@media screen and (max-width:1213px) {
+    .first {
+        flex-wrap: wrap;
+    }
+    
+}
+@media  screen and (max-width:705px) {
+    .main .text .text-buttons{
+        flex-direction: column;
+    }
+}

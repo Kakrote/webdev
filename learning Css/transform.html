@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 80vh;
+        border: 2px solid violet;
+    }
+    .box{
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(30deg);
+        /* there are sevral other properties */
+        /* the origin is use to shift the origin point of the iteam alog the axies */
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
